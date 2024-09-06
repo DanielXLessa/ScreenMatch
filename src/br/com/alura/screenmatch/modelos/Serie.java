@@ -9,19 +9,15 @@ public class Serie extends Titulo {
     public int getTemporadas() {
         return temporadas;
     }
-
     public void setTemporadas(int temporadas) {
-        this.temporadas = temporadas;
+    this.temporadas = temporadas;
     }
-
     public boolean isAtiva() {
         return ativa;
     }
-
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
     }
-
     public int getEpisodiosPorTemporada() {
         return episodiosPorTemporada;
     }
@@ -38,7 +34,7 @@ public class Serie extends Titulo {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
 
-    @Override
+    @Override //reescrevemos duracaoemminutos e fazemos ele retornar/ser essa conta ai
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
